@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		567658A218A4185B00D20A8F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 567658A118A4185B00D20A8F /* main.c */; };
 		567658A418A4185B00D20A8F /* arching_an_arrow.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 567658A318A4185B00D20A8F /* arching_an_arrow.1 */; };
+		567658AB18A4189600D20A8F /* arching_an_arrow.c in Sources */ = {isa = PBXBuildFile; fileRef = 567658AA18A4189600D20A8F /* arching_an_arrow.c */; };
+		567658B018A4197500D20A8F /* input_utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 567658AF18A4197500D20A8F /* input_utilities.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,13 @@
 		5676589E18A4185B00D20A8F /* arching_an_arrow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = arching_an_arrow; sourceTree = BUILT_PRODUCTS_DIR; };
 		567658A118A4185B00D20A8F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		567658A318A4185B00D20A8F /* arching_an_arrow.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = arching_an_arrow.1; sourceTree = "<group>"; };
+		567658AA18A4189600D20A8F /* arching_an_arrow.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arching_an_arrow.c; sourceTree = "<group>"; };
+		567658AC18A418A500D20A8F /* arching_an_arrow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arching_an_arrow.h; sourceTree = "<group>"; };
+		567658AD18A4192300D20A8F /* arching_an_arrow_internals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arching_an_arrow_internals.h; sourceTree = "<group>"; };
+		567658AE18A4196A00D20A8F /* input_utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = input_utilities.h; sourceTree = "<group>"; };
+		567658AF18A4197500D20A8F /* input_utilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = input_utilities.c; sourceTree = "<group>"; };
+		567658B118A4198500D20A8F /* boolean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boolean.h; sourceTree = "<group>"; };
+		567658B518A419C700D20A8F /* Gunner.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gunner.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +69,41 @@
 		567658A018A4185B00D20A8F /* arching_an_arrow */ = {
 			isa = PBXGroup;
 			children = (
-				567658A118A4185B00D20A8F /* main.c */,
-				567658A318A4185B00D20A8F /* arching_an_arrow.1 */,
+				567658B318A419A000D20A8F /* headers */,
+				567658B218A4199800D20A8F /* source */,
+				567658B418A419B500D20A8F /* documents */,
 			);
 			path = arching_an_arrow;
+			sourceTree = "<group>";
+		};
+		567658B218A4199800D20A8F /* source */ = {
+			isa = PBXGroup;
+			children = (
+				567658A118A4185B00D20A8F /* main.c */,
+				567658AA18A4189600D20A8F /* arching_an_arrow.c */,
+				567658AF18A4197500D20A8F /* input_utilities.c */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+		567658B318A419A000D20A8F /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				567658AD18A4192300D20A8F /* arching_an_arrow_internals.h */,
+				567658AC18A418A500D20A8F /* arching_an_arrow.h */,
+				567658AE18A4196A00D20A8F /* input_utilities.h */,
+				567658B118A4198500D20A8F /* boolean.h */,
+			);
+			name = headers;
+			sourceTree = "<group>";
+		};
+		567658B418A419B500D20A8F /* documents */ = {
+			isa = PBXGroup;
+			children = (
+				567658A318A4185B00D20A8F /* arching_an_arrow.1 */,
+				567658B518A419C700D20A8F /* Gunner.txt */,
+			);
+			name = documents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				567658A218A4185B00D20A8F /* main.c in Sources */,
+				567658B018A4197500D20A8F /* input_utilities.c in Sources */,
+				567658AB18A4189600D20A8F /* arching_an_arrow.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

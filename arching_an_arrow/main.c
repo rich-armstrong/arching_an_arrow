@@ -7,12 +7,14 @@
 //
 
 #include <stdio.h>
+#include "arching_an_arrow.h"
 
 int main(int argc, const char * argv[])
 {
-
-  // insert code here...
-  printf("Hello, World!\n");
-    return 0;
+	instructions();
+  event_loop();
+  terminate();
+  return 0;
 }
+
 
