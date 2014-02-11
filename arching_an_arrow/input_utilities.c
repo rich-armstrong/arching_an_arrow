@@ -22,7 +22,8 @@ int get_int
     
     int     return_value	= 0;
     char    buffer [ 1024 ];
-    
+  
+  	// clean the buffer
     for ( unsigned int i = 0; i < ( sizeof ( buffer ) / sizeof ( buffer [ 0 ] ) ); i++ )
     {
         buffer [ i ] = 0;
@@ -31,8 +32,9 @@ int get_int
     do
     {
         printf ( "%s", prompt );
-        
-        gets ( buffer );
+ 
+      	gets(buffer);
+//    	fgets ( buffer, sizeof(buffer), stdin );
         
         for ( int i = 0; i < strlen ( buffer ); i++ )
         {

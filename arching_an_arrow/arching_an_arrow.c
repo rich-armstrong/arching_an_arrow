@@ -18,44 +18,42 @@ unsigned int enemy_distance =	0;
 
 void instructions ( void )
 {
-  printf ( "Arching An Arrow\n" );
-  printf ( "Created by Richard on 5/13/13.\n" );
-  printf ( "\n" );
-  
-  boolean show_instructions = get_yes_no ( "Would you like instructions? " );
-  
-  if ( show_instructions )
-  {
+    printf ( "Arching An Arrow\n" );
+    printf ( "Created by Richard on 5/13/13.\n" );
+    printf ( "\n" );
     
-    printf	(	"\n"
-             "This game allows you to adjust the "
-             "angle of your bow to fire at "
-             "a stationary target. Hitting within "
-             "2 yards of the target is a confirmed "
-             "hit. Specify the number of degrees "
-             "of elevation of your bow: 45 degrees "
-             "provides maximum range with values "
-             "under or over 45 degrees providing "
-             "less range."
-             "\n\n"
-             );
+    boolean show_instructions = get_yes_no ( "Would you like instructions? " );
     
-  }
+    if ( show_instructions )
+    {
+        printf	(	"\n"
+                 "This game allows you to adjust the "
+                 "angle of your bow to fire at "
+                 "a stationary target. Hitting within "
+                 "2 yards of the target is a confirmed "
+                 "hit. Specify the number of degrees "
+                 "of elevation of your bow: 45 degrees "
+                 "provides maximum range with values "
+                 "under or over 45 degrees providing "
+                 "less range."
+                 "\n\n"
+                 );
+    }
 }
 
 void intialization ( void )
 {
-  // setting max range
-  const unsigned int min_firing_distance	= 35;
-	
-  range = 70; //( ( rand() % min_range ) + min_firing_distance );
-  
-  printf ( "Your bow shoots up to %d yards away.\n", range );
-  
-  // enemy distance
-  enemy_distance = ( int )( ( rand() % ( range - min_firing_distance ) ) + min_firing_distance  );
-  
-  printf ( "Your target is %d yards away\n", enemy_distance );
+    // setting max range
+    const unsigned int min_firing_distance	= 35;
+    
+    range = 70; //( ( rand() % min_range ) + min_firing_distance );
+    
+    printf ( "Your bow shoots up to %d yards away.\n", range );
+    
+    // enemy distance
+    enemy_distance = ( int )( ( rand() % ( range - min_firing_distance ) ) + min_firing_distance  );
+    
+    printf ( "Your target is %d yards away\n", enemy_distance );
 }
 
 void event_loop ( void )
