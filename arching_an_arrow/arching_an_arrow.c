@@ -13,7 +13,7 @@
 #include "arching_an_arrow.h"
 #include "input_utilities.h"
 
-unsigned int range 					=	0;
+unsigned int range     	    =	0;
 unsigned int enemy_distance =	0;
 
 void instructions ( void )
